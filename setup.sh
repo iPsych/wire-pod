@@ -136,6 +136,7 @@ function getLanguage() {
         echo "3: Spanish (ES)"
         echo "4: French (FR)"
         echo "5: German (DE)"
+	echo "6: Korean (KR)"
         echo
         read -p "Enter a number (1): " languageNum
         if [[ ! -n ${languageNum} ]]; then
@@ -209,6 +210,18 @@ function getLanguage() {
                 unzip vosk-model-small-de-0.15.zip
                 mv vosk-model-small-de-0.15 model
                 rm vosk-model-small-de-0.15.zip
+            fi
+	elif [[ ${languageNum} == "6" ]]; then
+            languageNum="ko-KR"
+            if [[ ! -d vosk/models/de-DE ]]; then
+                cd ${origDir}
+                echo "Downloading Korean (KR) model"
+                mkdir -p vosk/models/ko-KR
+                cd vosk/models/de-DE
+                wget -q --show-progress --no-check-certificate https://alphacephei.com/vosk/models/vosk-model-small-ko-0.22.zip
+                unzip vosk-model-small-ko-0.22.zip
+                mv vosk-model-small-ko-0.22 model
+                rm vosk-model-small-ko-0.22.zip
             fi
         else
             echo
