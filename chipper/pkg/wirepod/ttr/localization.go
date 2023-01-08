@@ -42,40 +42,40 @@ const STR_FOR = "str_for"
 // All text must be lowercase!
 
 var texts = map[string][]string{
-	//  key                 			en-US   it-IT   es-ES    fr-FR    de-DE
+	//  key                 			en-US   it-IT   es-ES    fr-FR    de-DE    ko-KR
 	STR_WEATHER_IN:                     {" in ", " a ", " en ", " en ", " in "},
-	STR_WEATHER_FORECAST:               {"forecast", "previsioni", "pronóstico", "prévisions", "wettervorhersage"},
-	STR_WEATHER_TOMORROW:               {"tomorrow", "domani", "mañana", "demain", "morgen"},
-	STR_WEATHER_THE_DAY_AFTER_TOMORROW: {"day after tomorrow", "dopodomani", "el día después de mañana", "lendemain de demain", "am tag nach morgen"},
-	STR_WEATHER_TONIGHT:                {"tonight", "stasera", "esta noche", "ce soir", "heute abend"},
-	STR_WEATHER_THIS_AFTERNOON:         {"afternoon", "pomeriggio", "esta tarde", "après-midi", "heute nachmittag"},
-	STR_EYE_COLOR_PURPLE:               {"purple", "lilla", "violeta", "violet", "violett"},
-	STR_EYE_COLOR_BLUE:                 {"blue", "blu", "azul", "bleu", "blau"},
-	STR_EYE_COLOR_SAPPHIRE:             {"sapphire", "zaffiro", "zafiro", "saphir", "saphir"},
-	STR_EYE_COLOR_YELLOW:               {"yellow", "giallo", "amarillo", "jaune", "gelb"},
-	STR_EYE_COLOR_TEAL:                 {"teal", "verde acqua", "verde azulado", "sarcelle", "blaugrün"},
-	STR_EYE_COLOR_TEAL2:                {"tell", "acquamarina", "aguamarina", "acquamarina", "acquamarina"},
-	STR_EYE_COLOR_GREEN:                {"green", "verde", "verde", "vert", "grün"},
-	STR_EYE_COLOR_ORANGE:               {"orange", "arancio", "naranja", "orange", "orange"},
-	STR_ME:                             {"me", "me", "me", "moi", "mir"},
+	STR_WEATHER_FORECAST:               {"forecast", "previsioni", "pronóstico", "prévisions", "wettervorhersage", "예보"},
+	STR_WEATHER_TOMORROW:               {"tomorrow", "domani", "mañana", "demain", "morgen", "내일"},
+	STR_WEATHER_THE_DAY_AFTER_TOMORROW: {"day after tomorrow", "dopodomani", "el día después de mañana", "lendemain de demain", "am tag nach morgen", "모레"},
+	STR_WEATHER_TONIGHT:                {"tonight", "stasera", "esta noche", "ce soir", "heute abend", "오늘 밤"},
+	STR_WEATHER_THIS_AFTERNOON:         {"afternoon", "pomeriggio", "esta tarde", "après-midi", "heute nachmittag", "오후"},
+	STR_EYE_COLOR_PURPLE:               {"purple", "lilla", "violeta", "violet", "violett", "보라"},
+	STR_EYE_COLOR_BLUE:                 {"blue", "blu", "azul", "bleu", "blau", "파랑"},
+	STR_EYE_COLOR_SAPPHIRE:             {"sapphire", "zaffiro", "zafiro", "saphir", "saphir", "사파이어"},
+	STR_EYE_COLOR_YELLOW:               {"yellow", "giallo", "amarillo", "jaune", "gelb", "노랑"},
+	STR_EYE_COLOR_TEAL:                 {"teal", "verde acqua", "verde azulado", "sarcelle", "blaugrün", "청록"},
+	STR_EYE_COLOR_TEAL2:                {"tell", "acquamarina", "aguamarina", "acquamarina", "acquamarina", "남옥"},
+	STR_EYE_COLOR_GREEN:                {"green", "verde", "verde", "vert", "grün", "초록"},
+	STR_EYE_COLOR_ORANGE:               {"orange", "arancio", "naranja", "orange", "orange", "주황"},
+	STR_ME:                             {"me", "me", "me", "moi", "mir", "나"},
 	STR_SELF:                           {"self", "mi", "mía", "moi", "mein"},
-	STR_VOLUME_LOW:                     {"low", "basso", "bajo", "bas", "niedrig"},
-	STR_VOLUME_QUIET:                   {"quiet", "poco rumoroso", "tranquilo", "silencieux", "ruhig"},
+	STR_VOLUME_LOW:                     {"low", "basso", "bajo", "bas", "niedrig", "낮게"},
+	STR_VOLUME_QUIET:                   {"quiet", "poco rumoroso", "tranquilo", "silencieux", "ruhig", "조용"},
 	STR_VOLUME_MEDIUM_LOW:              {"medium low", "medio basso", "medio-bajo", "moyen-doux", "mittelschwer"},
 	STR_VOLUME_MEDIUM:                  {"medium", "medio", "medio", "moyen", "mittel"},
-	STR_VOLUME_NORMAL:                  {"normal", "normale", "normal", "normal", "normal"},
+	STR_VOLUME_NORMAL:                  {"normal", "normale", "normal", "normal", "normal", "보통"},
 	STR_VOLUME_REGULAR:                 {"regular", "regolare", "regular", "régulier", "regulär"},
-	STR_VOLUME_MEDIUM_HIGH:             {"medium high", "medio alto", "medio-alto", "moyen-élevé", "mittelhoch"},
-	STR_VOLUME_HIGH:                    {"high", "alto", "alto", "élevé", "hoch"},
-	STR_VOLUME_LOUD:                    {"loud", "rumoroso", "fuerte", "fort", "laut"},
-	STR_VOLUME_MUTE:                    {"mute", "muto", "mudo", "", "stumm"},
+	STR_VOLUME_MEDIUM_HIGH:             {"medium high", "medio alto", "medio-alto", "moyen-élevé", "mittelhoch", "조금 높게"},
+	STR_VOLUME_HIGH:                    {"high", "alto", "alto", "élevé", "hoch", "높게"},
+	STR_VOLUME_LOUD:                    {"loud", "rumoroso", "fuerte", "fort", "laut", "시끄럽게"},
+	STR_VOLUME_MUTE:                    {"mute", "muto", "mudo", "", "stumm", "무음"},
 	STR_VOLUME_NOTHING:                 {"nothing", "nessuno", "nada", "rien", "nichts"},
 	STR_VOLUME_SILENT:                  {"silent", "silenzioso", "silencio", "silencieux", "still"},
-	STR_VOLUME_OFF:                     {"off", "spento", "apagado", "éteindre", "aus"},
-	STR_VOLUME_ZERO:                    {"zero", "zero", "cero", "zéro", "null"},
-	STR_NAME_IS:                        {" is ", " è ", " es ", " est ", " ist "},
-	STR_NAME_IS2:                       {"'s", "sono ", "soy ", "suis ", "bin "},
-	STR_NAME_IS3:                       {"names", " chiamo ", " llamo ", "appelle ", "werde"},
+	STR_VOLUME_OFF:                     {"off", "spento", "apagado", "éteindre", "aus", "꺼"},
+	STR_VOLUME_ZERO:                    {"zero", "zero", "cero", "zéro", "null", "영"},
+	STR_NAME_IS:                        {" is ", " è ", " es ", " est ", " ist ", "은 "},
+	STR_NAME_IS2:                       {"'s", "sono ", "soy ", "suis ", "bin ", "의 "},
+	STR_NAME_IS3:                       {"names", " chiamo ", " llamo ", "appelle ", "werde", "이름들"},
 	STR_FOR:                            {" for ", " per ", " para ", " pour ", " für "},
 }
 
@@ -90,6 +90,8 @@ func getText(key string) string {
 			return data[3]
 		} else if sr.SttLanguage == "de-DE" {
 			return data[4]
+		} else if sr.SttLanguage == "ko-KR" {
+			return data[5]
 		}
 	}
 	return data[0]
