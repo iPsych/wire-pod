@@ -217,7 +217,7 @@ function getLanguage() {
                 cd ${origDir}
                 echo "Downloading Korean (KR) model"
                 mkdir -p vosk/models/ko-KR
-                cd vosk/models/de-DE
+                cd vosk/models/ko-KR
                 wget -q --show-progress --no-check-certificate https://alphacephei.com/vosk/models/vosk-model-small-ko-0.22.zip
                 unzip vosk-model-small-ko-0.22.zip
                 mv vosk-model-small-ko-0.22 model
